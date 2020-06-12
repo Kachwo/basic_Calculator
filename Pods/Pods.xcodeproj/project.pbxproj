@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		078E5792E71E4E4F60438EED503219F1 /* DecimalNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5516C617DA2A7669D683207A97E8A1A9 /* DecimalNumberExtractor.swift */; };
+		09CCB1E324655D7FCE8166083B176624 /* Pods-Calculator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E32403484916DE8ACA77A1DAA5474DB5 /* Pods-Calculator-dummy.m */; };
+		137BBB3EA2D521A579A8135703D0990B /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D9EF74F9CFBA0A8C5748C430E401F /* Operator.swift */; };
+		188064D85B622F2D07FB5A6BD9F466F2 /* OctalNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E84E75EE6A58478B8C1F690DAF33A /* OctalNumberExtractor.swift */; };
+		19FCCF3C3F485E62491EA61FEBE72C0B /* ExponentExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C7C02D1CC5D8C347D45DBD6CE9D62 /* ExponentExtractor.swift */; };
+		1A7DBC8F1EB51B31351FA5E408A2CBEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1E6174AA93273176DDCE2DD0A01384E2 /* DDMathParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED1DA0E1DFBD0A202A3E65940461F9FF /* DDMathParser-dummy.m */; };
+		20850AF3723850FE77F1481823EDA3FC /* TokenGrouper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6887B6731CC35AECC3EED678B92E4D19 /* TokenGrouper.swift */; };
+		250B84C939E21FC0DEA2FBFAFB25B47F /* GroupedToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0504A96BAD3341FE74E991D434FCB /* GroupedToken.swift */; };
+		2B83E581AA2AA03CB8A8C87AF956F541 /* Pods-Calculator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B905486E01BDBCA058531FADE58BCA39 /* Pods-Calculator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FBF86293F6658740AFBD5A42D5D16E1 /* OperatorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31348D78D27A2EB48EC58C0BB08AB5BA /* OperatorSet.swift */; };
+		3155897A452ECDE01C98E31340FCE162 /* FractionNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60DF2693A42B42310957A83A2587A83 /* FractionNumberExtractor.swift */; };
+		33FA1F7C85C9EB1B77C2CE7825CFEB66 /* ResolvedToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F559DE0E4A0C892819693FD0638E5A46 /* ResolvedToken.swift */; };
+		3520964D4798BAEE3CA199138096C19F /* VariableExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C4E9CABB59046C7E7D967C3F3E815E /* VariableExtractor.swift */; };
+		3532F97AFE38AA6F405E03C87035EDAF /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD67526A0806D89BAD1B27047BEE82F /* Evaluator.swift */; };
+		36B814BE9FEE4F61B7FF8431CEEBC274 /* Functions+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D403E9E59D9AA27048AE657B65215A55 /* Functions+Defaults.swift */; };
+		3A8C95C8DCE074DC7B3BA7D3720DA517 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E71A51E3CF6ED97D7E5CACDED9FF20 /* Expression.swift */; };
+		3AE874E01E16C96D3591D9A4CCDBD07B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A24C27ACAA0D40FEAA73C763755D002 /* Double.swift */; };
+		3B859E9B772FF1BE429A91D0644BC101 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE281D292185D137B8A77FBCAAFA8A /* Tokenizer.swift */; };
+		4082100C570F194A2357ABDD8A90CBC8 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D45C42D9237A531DB1FC49FABD2007 /* Deprecations.swift */; };
+		4ECF85C5DCEDEFEE3B2E27AF925A39E2 /* LocalizedNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D892377E3077CB5907EB28FC89E6895 /* LocalizedNumberExtractor.swift */; };
+		5215022F15C48140677033FD5716D9B1 /* PeekingIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC4CB9DC055DB34B8CF18EFBAC9AF25 /* PeekingIterator.swift */; };
+		58883AA0DC9ADEAFEEA6C930FB2E8964 /* HexNumberExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2298684F2A7BE557211A27BD188B0096 /* HexNumberExtractor.swift */; };
+		5DD03404429B6D042692A9AB147E3BCA /* FunctionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DE43983A064E9068BEF6C24622A28E /* FunctionSet.swift */; };
+		604D7DDCF143BDC866CF2BBC59FE3C9E /* RewriteRule+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A870F514C5B787546F8DA406FF4719 /* RewriteRule+Defaults.swift */; };
+		6342B3574C2C6065ADF014CC60F9A5B8 /* SubstitutionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F2A0B9D86A2186642A25736155516 /* SubstitutionExtensions.swift */; };
+		7161BDA16BF742AB942BCA2EAEDBB660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7BC6BCC88DC5835A0614F6BB41E13FDB /* OperatorExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761812C09EC505148C261CCA394AF6DA /* OperatorExtractor.swift */; };
+		86043369CE7FCF2A3B7F20CA1B213536 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A8B6542AFCABE214FCECBBD5AAFB4 /* String.swift */; };
+		8A12B24CC7CA348F76A1B6F95F5AD837 /* TokenCharacterBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79205E48AB716AB98B010B68CD9C9EC /* TokenCharacterBuffer.swift */; };
+		8B6EAEC2C73522E04FD218B56F9D2063 /* ExpressionRewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E14C76064338C2DC2FFA6BC80CA89 /* ExpressionRewriter.swift */; };
+		8F57050E57FD2C251475A7E0824FB05E /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1CD9D093DBC0B0E8FD0C8245461B4 /* Function.swift */; };
+		9004AD89DBD6F9FF8F93497369F6A9A9 /* MathParserErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE1198612780D52C333F250098C11E /* MathParserErrors.swift */; };
+		950EE5F9256257B95B26C334498CCE0B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9051A4BB8251C30EA9F5022A51CCEF55 /* Configuration.swift */; };
+		9EA79808F8593250DB616388436F16AD /* Operator+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160216D594A7B45FE1861897BBD3C1D0 /* Operator+Defaults.swift */; };
+		A66C5D6153F244B2BA8A64362AE7C8F7 /* Expressionizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F933DBAC80C2898DA0FAADAD28F46E8 /* Expressionizer.swift */; };
+		B7D1EC92C950C316A861409B531EC6AF /* RawToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7AC7BC4234E9AC3722C7E1EB0D0E5 /* RawToken.swift */; };
+		BCB12E82471B66DB648BCED8217B979E /* OperatorTokenSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CF3B28DB6D6F07C32E8812BB70CAF /* OperatorTokenSet.swift */; };
+		C2C6DFB06EAFCCF156EE118CF2C0A794 /* DynamicResolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096CFB81E925F49ADCEF2FF528914C3B /* DynamicResolution.swift */; };
+		CD86BB1295012AD09D1E9259ECABCD51 /* TokenResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673C25AF5D7E26BB6ACF844FDB429A3B /* TokenResolver.swift */; };
+		D62F0B492F655D15BE0B75D6DF656582 /* IdentifierExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0784C9E8D0C54756264B33B1C47646E0 /* IdentifierExtractor.swift */; };
+		D797FAF5A528719877AAEE6DA39FD35C /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A9CE1FDE514513052CB175CCB81655 /* Character.swift */; };
+		D9FCD45F74510B34A8BB4DD099435DE8 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0FE14308F1A84CD5F0E97AAA6F68B /* Either.swift */; };
+		E97E3867C89713F372510EB7EE6A6EDE /* TokenExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73583E5B4647DD70909E6B84CE7BCDF6 /* TokenExtractor.swift */; };
+		E9DCF1B22B2C9C7F72EB017B8F093AF1 /* QuotedVariableExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C125C23192CFE93313F19788EC3EDAB7 /* QuotedVariableExtractor.swift */; };
+		F0C9A1EEE0C13A2BF7ED85DDA411DCD7 /* Expression+Matching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40C6F6F5A6F2E07CEC5064210886172 /* Expression+Matching.swift */; };
+		F5CAE428F3F2E68C5CED7A455BCE5512 /* DDMathParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EE782A861EDAF51340FB9C235322106 /* DDMathParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB73A99171E6BFEE917CA245FD327834 /* RewriteRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E7BDE692F9C79ED2CDDD6351C6625D /* RewriteRule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF6600DFFC3759FDA610749EDEDF29AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5596A8805FF25F9BD25A4904131CF2C2;
+			remoteInfo = DDMathParser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0784C9E8D0C54756264B33B1C47646E0 /* IdentifierExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifierExtractor.swift; path = MathParser/Sources/MathParser/IdentifierExtractor.swift; sourceTree = "<group>"; };
+		078E62CEE0ED21A89921430B16D479C3 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		07B58C24A159FC6F633E94B8F23464F7 /* Pods-Calculator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calculator-acknowledgements.plist"; sourceTree = "<group>"; };
+		096CFB81E925F49ADCEF2FF528914C3B /* DynamicResolution.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicResolution.swift; path = MathParser/Sources/MathParser/DynamicResolution.swift; sourceTree = "<group>"; };
+		0A24C27ACAA0D40FEAA73C763755D002 /* Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Double.swift; path = MathParser/Sources/MathParser/Double.swift; sourceTree = "<group>"; };
+		160216D594A7B45FE1861897BBD3C1D0 /* Operator+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Operator+Defaults.swift"; path = "MathParser/Sources/MathParser/Operator+Defaults.swift"; sourceTree = "<group>"; };
+		181E84F27FE7D603FC8A484B077D4064 /* DDMathParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DDMathParser.xcconfig; sourceTree = "<group>"; };
+		1D892377E3077CB5907EB28FC89E6895 /* LocalizedNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalizedNumberExtractor.swift; path = MathParser/Sources/MathParser/LocalizedNumberExtractor.swift; sourceTree = "<group>"; };
+		1E37A605274DA347ED48800635773BB6 /* DDMathParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDMathParser-prefix.pch"; sourceTree = "<group>"; };
+		1F1CF3B28DB6D6F07C32E8812BB70CAF /* OperatorTokenSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorTokenSet.swift; path = MathParser/Sources/MathParser/OperatorTokenSet.swift; sourceTree = "<group>"; };
+		2298684F2A7BE557211A27BD188B0096 /* HexNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexNumberExtractor.swift; path = MathParser/Sources/MathParser/HexNumberExtractor.swift; sourceTree = "<group>"; };
+		2521CFDEBBB21C3131F4669F12F8CC13 /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Calculator.framework; path = "Pods-Calculator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31348D78D27A2EB48EC58C0BB08AB5BA /* OperatorSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorSet.swift; path = MathParser/Sources/MathParser/OperatorSet.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3BF7AC7BC4234E9AC3722C7E1EB0D0E5 /* RawToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RawToken.swift; path = MathParser/Sources/MathParser/RawToken.swift; sourceTree = "<group>"; };
+		3BFE1198612780D52C333F250098C11E /* MathParserErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MathParserErrors.swift; path = MathParser/Sources/MathParser/MathParserErrors.swift; sourceTree = "<group>"; };
+		43C4E9CABB59046C7E7D967C3F3E815E /* VariableExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VariableExtractor.swift; path = MathParser/Sources/MathParser/VariableExtractor.swift; sourceTree = "<group>"; };
+		51A870F514C5B787546F8DA406FF4719 /* RewriteRule+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "RewriteRule+Defaults.swift"; path = "MathParser/Sources/MathParser/RewriteRule+Defaults.swift"; sourceTree = "<group>"; };
+		54A9CE1FDE514513052CB175CCB81655 /* Character.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Character.swift; path = MathParser/Sources/MathParser/Character.swift; sourceTree = "<group>"; };
+		5516C617DA2A7669D683207A97E8A1A9 /* DecimalNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalNumberExtractor.swift; path = MathParser/Sources/MathParser/DecimalNumberExtractor.swift; sourceTree = "<group>"; };
+		58E0504A96BAD3341FE74E991D434FCB /* GroupedToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupedToken.swift; path = MathParser/Sources/MathParser/GroupedToken.swift; sourceTree = "<group>"; };
+		593E391D8FC1D94F2EE02864552ED84F /* DDMathParser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDMathParser-Info.plist"; sourceTree = "<group>"; };
+		5DC4CB9DC055DB34B8CF18EFBAC9AF25 /* PeekingIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeekingIterator.swift; path = MathParser/Sources/MathParser/PeekingIterator.swift; sourceTree = "<group>"; };
+		5EE782A861EDAF51340FB9C235322106 /* DDMathParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDMathParser-umbrella.h"; sourceTree = "<group>"; };
+		5F2414E0D2483D80620139DCDA2E6B73 /* Pods-Calculator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Calculator.modulemap"; sourceTree = "<group>"; };
+		5F933DBAC80C2898DA0FAADAD28F46E8 /* Expressionizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expressionizer.swift; path = MathParser/Sources/MathParser/Expressionizer.swift; sourceTree = "<group>"; };
+		61B1CD9D093DBC0B0E8FD0C8245461B4 /* Function.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Function.swift; path = MathParser/Sources/MathParser/Function.swift; sourceTree = "<group>"; };
+		628BAB14DAC3C359A9E8C7631F65C5D9 /* Pods-Calculator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calculator-frameworks.sh"; sourceTree = "<group>"; };
+		634F2A0B9D86A2186642A25736155516 /* SubstitutionExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubstitutionExtensions.swift; path = MathParser/Sources/MathParser/SubstitutionExtensions.swift; sourceTree = "<group>"; };
+		673C25AF5D7E26BB6ACF844FDB429A3B /* TokenResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenResolver.swift; path = MathParser/Sources/MathParser/TokenResolver.swift; sourceTree = "<group>"; };
+		6887B6731CC35AECC3EED678B92E4D19 /* TokenGrouper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenGrouper.swift; path = MathParser/Sources/MathParser/TokenGrouper.swift; sourceTree = "<group>"; };
+		6B3A491E4773F0EE2CD7399042FFF457 /* Pods-Calculator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calculator-Info.plist"; sourceTree = "<group>"; };
+		6CA7CE7898DA93DCB587AAD31FB0E845 /* DDMathParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DDMathParser.modulemap; sourceTree = "<group>"; };
+		6D9E84E75EE6A58478B8C1F690DAF33A /* OctalNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OctalNumberExtractor.swift; path = MathParser/Sources/MathParser/OctalNumberExtractor.swift; sourceTree = "<group>"; };
+		73583E5B4647DD70909E6B84CE7BCDF6 /* TokenExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenExtractor.swift; path = MathParser/Sources/MathParser/TokenExtractor.swift; sourceTree = "<group>"; };
+		761812C09EC505148C261CCA394AF6DA /* OperatorExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperatorExtractor.swift; path = MathParser/Sources/MathParser/OperatorExtractor.swift; sourceTree = "<group>"; };
+		83E0FE14308F1A84CD5F0E97AAA6F68B /* Either.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Either.swift; path = MathParser/Sources/MathParser/Either.swift; sourceTree = "<group>"; };
+		9051A4BB8251C30EA9F5022A51CCEF55 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = MathParser/Sources/MathParser/Configuration.swift; sourceTree = "<group>"; };
+		91628129A952E4F7967A07C24108579F /* Pods-Calculator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calculator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		921D9EF74F9CFBA0A8C5748C430E401F /* Operator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operator.swift; path = MathParser/Sources/MathParser/Operator.swift; sourceTree = "<group>"; };
+		94E7BDE692F9C79ED2CDDD6351C6625D /* RewriteRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RewriteRule.swift; path = MathParser/Sources/MathParser/RewriteRule.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D45C42D9237A531DB1FC49FABD2007 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = MathParser/Sources/MathParser/Deprecations.swift; sourceTree = "<group>"; };
+		A9DE43983A064E9068BEF6C24622A28E /* FunctionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FunctionSet.swift; path = MathParser/Sources/MathParser/FunctionSet.swift; sourceTree = "<group>"; };
+		B3BE281D292185D137B8A77FBCAAFA8A /* Tokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokenizer.swift; path = MathParser/Sources/MathParser/Tokenizer.swift; sourceTree = "<group>"; };
+		B905486E01BDBCA058531FADE58BCA39 /* Pods-Calculator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calculator-umbrella.h"; sourceTree = "<group>"; };
+		C125C23192CFE93313F19788EC3EDAB7 /* QuotedVariableExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuotedVariableExtractor.swift; path = MathParser/Sources/MathParser/QuotedVariableExtractor.swift; sourceTree = "<group>"; };
+		C8E71A51E3CF6ED97D7E5CACDED9FF20 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = MathParser/Sources/MathParser/Expression.swift; sourceTree = "<group>"; };
+		D403E9E59D9AA27048AE657B65215A55 /* Functions+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Functions+Defaults.swift"; path = "MathParser/Sources/MathParser/Functions+Defaults.swift"; sourceTree = "<group>"; };
+		D60DF2693A42B42310957A83A2587A83 /* FractionNumberExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FractionNumberExtractor.swift; path = MathParser/Sources/MathParser/FractionNumberExtractor.swift; sourceTree = "<group>"; };
+		E32403484916DE8ACA77A1DAA5474DB5 /* Pods-Calculator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calculator-dummy.m"; sourceTree = "<group>"; };
+		E79205E48AB716AB98B010B68CD9C9EC /* TokenCharacterBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenCharacterBuffer.swift; path = MathParser/Sources/MathParser/TokenCharacterBuffer.swift; sourceTree = "<group>"; };
+		E88C7C02D1CC5D8C347D45DBD6CE9D62 /* ExponentExtractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExponentExtractor.swift; path = MathParser/Sources/MathParser/ExponentExtractor.swift; sourceTree = "<group>"; };
+		ECD67526A0806D89BAD1B27047BEE82F /* Evaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = MathParser/Sources/MathParser/Evaluator.swift; sourceTree = "<group>"; };
+		ED1DA0E1DFBD0A202A3E65940461F9FF /* DDMathParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDMathParser-dummy.m"; sourceTree = "<group>"; };
+		F40C6F6F5A6F2E07CEC5064210886172 /* Expression+Matching.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Expression+Matching.swift"; path = "MathParser/Sources/MathParser/Expression+Matching.swift"; sourceTree = "<group>"; };
+		F559DE0E4A0C892819693FD0638E5A46 /* ResolvedToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResolvedToken.swift; path = MathParser/Sources/MathParser/ResolvedToken.swift; sourceTree = "<group>"; };
+		F59A8B6542AFCABE214FCECBBD5AAFB4 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = MathParser/Sources/MathParser/String.swift; sourceTree = "<group>"; };
+		F863CFDCE6B2A23D274BA47C4B1D96AA /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		FD21B372CB61C8A0F211867B7965259D /* MathParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MathParser.framework; path = DDMathParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4E14C76064338C2DC2FFA6BC80CA89 /* ExpressionRewriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpressionRewriter.swift; path = MathParser/Sources/MathParser/ExpressionRewriter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02F0B3D05306606BD1208BDC111AB3D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7DBC8F1EB51B31351FA5E408A2CBEE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475B418790CCFD60DF6E6D9EE02893E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7161BDA16BF742AB942BCA2EAEDBB660 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C26749D4BAF038155B44B23AF6EC57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44907A828E77E5B16F9324DD92957054 /* DDMathParser */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0A9FCA0F97F399EA5C361B5D2CB98E9C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C99AB8A5BAAA809E91E8ECC502B1CB3 /* Pods-Calculator */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0C99AB8A5BAAA809E91E8ECC502B1CB3 /* Pods-Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				5F2414E0D2483D80620139DCDA2E6B73 /* Pods-Calculator.modulemap */,
+				91628129A952E4F7967A07C24108579F /* Pods-Calculator-acknowledgements.markdown */,
+				07B58C24A159FC6F633E94B8F23464F7 /* Pods-Calculator-acknowledgements.plist */,
+				E32403484916DE8ACA77A1DAA5474DB5 /* Pods-Calculator-dummy.m */,
+				628BAB14DAC3C359A9E8C7631F65C5D9 /* Pods-Calculator-frameworks.sh */,
+				6B3A491E4773F0EE2CD7399042FFF457 /* Pods-Calculator-Info.plist */,
+				B905486E01BDBCA058531FADE58BCA39 /* Pods-Calculator-umbrella.h */,
+				F863CFDCE6B2A23D274BA47C4B1D96AA /* Pods-Calculator.debug.xcconfig */,
+				078E62CEE0ED21A89921430B16D479C3 /* Pods-Calculator.release.xcconfig */,
+			);
+			name = "Pods-Calculator";
+			path = "Target Support Files/Pods-Calculator";
+			sourceTree = "<group>";
+		};
+		44907A828E77E5B16F9324DD92957054 /* DDMathParser */ = {
+			isa = PBXGroup;
+			children = (
+				54A9CE1FDE514513052CB175CCB81655 /* Character.swift */,
+				9051A4BB8251C30EA9F5022A51CCEF55 /* Configuration.swift */,
+				5516C617DA2A7669D683207A97E8A1A9 /* DecimalNumberExtractor.swift */,
+				A1D45C42D9237A531DB1FC49FABD2007 /* Deprecations.swift */,
+				0A24C27ACAA0D40FEAA73C763755D002 /* Double.swift */,
+				096CFB81E925F49ADCEF2FF528914C3B /* DynamicResolution.swift */,
+				83E0FE14308F1A84CD5F0E97AAA6F68B /* Either.swift */,
+				ECD67526A0806D89BAD1B27047BEE82F /* Evaluator.swift */,
+				E88C7C02D1CC5D8C347D45DBD6CE9D62 /* ExponentExtractor.swift */,
+				C8E71A51E3CF6ED97D7E5CACDED9FF20 /* Expression.swift */,
+				F40C6F6F5A6F2E07CEC5064210886172 /* Expression+Matching.swift */,
+				5F933DBAC80C2898DA0FAADAD28F46E8 /* Expressionizer.swift */,
+				FD4E14C76064338C2DC2FFA6BC80CA89 /* ExpressionRewriter.swift */,
+				D60DF2693A42B42310957A83A2587A83 /* FractionNumberExtractor.swift */,
+				61B1CD9D093DBC0B0E8FD0C8245461B4 /* Function.swift */,
+				D403E9E59D9AA27048AE657B65215A55 /* Functions+Defaults.swift */,
+				A9DE43983A064E9068BEF6C24622A28E /* FunctionSet.swift */,
+				58E0504A96BAD3341FE74E991D434FCB /* GroupedToken.swift */,
+				2298684F2A7BE557211A27BD188B0096 /* HexNumberExtractor.swift */,
+				0784C9E8D0C54756264B33B1C47646E0 /* IdentifierExtractor.swift */,
+				1D892377E3077CB5907EB28FC89E6895 /* LocalizedNumberExtractor.swift */,
+				3BFE1198612780D52C333F250098C11E /* MathParserErrors.swift */,
+				6D9E84E75EE6A58478B8C1F690DAF33A /* OctalNumberExtractor.swift */,
+				921D9EF74F9CFBA0A8C5748C430E401F /* Operator.swift */,
+				160216D594A7B45FE1861897BBD3C1D0 /* Operator+Defaults.swift */,
+				761812C09EC505148C261CCA394AF6DA /* OperatorExtractor.swift */,
+				31348D78D27A2EB48EC58C0BB08AB5BA /* OperatorSet.swift */,
+				1F1CF3B28DB6D6F07C32E8812BB70CAF /* OperatorTokenSet.swift */,
+				5DC4CB9DC055DB34B8CF18EFBAC9AF25 /* PeekingIterator.swift */,
+				C125C23192CFE93313F19788EC3EDAB7 /* QuotedVariableExtractor.swift */,
+				3BF7AC7BC4234E9AC3722C7E1EB0D0E5 /* RawToken.swift */,
+				F559DE0E4A0C892819693FD0638E5A46 /* ResolvedToken.swift */,
+				94E7BDE692F9C79ED2CDDD6351C6625D /* RewriteRule.swift */,
+				51A870F514C5B787546F8DA406FF4719 /* RewriteRule+Defaults.swift */,
+				F59A8B6542AFCABE214FCECBBD5AAFB4 /* String.swift */,
+				634F2A0B9D86A2186642A25736155516 /* SubstitutionExtensions.swift */,
+				E79205E48AB716AB98B010B68CD9C9EC /* TokenCharacterBuffer.swift */,
+				73583E5B4647DD70909E6B84CE7BCDF6 /* TokenExtractor.swift */,
+				6887B6731CC35AECC3EED678B92E4D19 /* TokenGrouper.swift */,
+				B3BE281D292185D137B8A77FBCAAFA8A /* Tokenizer.swift */,
+				673C25AF5D7E26BB6ACF844FDB429A3B /* TokenResolver.swift */,
+				43C4E9CABB59046C7E7D967C3F3E815E /* VariableExtractor.swift */,
+				904E4C28D1F8079829503FD5906A94C9 /* Support Files */,
+			);
+			name = DDMathParser;
+			path = DDMathParser;
+			sourceTree = "<group>";
+		};
+		5737897DF70C7E8D443D63D3AFBCD990 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD21B372CB61C8A0F211867B7965259D /* MathParser.framework */,
+				2521CFDEBBB21C3131F4669F12F8CC13 /* Pods_Calculator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		904E4C28D1F8079829503FD5906A94C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7CE7898DA93DCB587AAD31FB0E845 /* DDMathParser.modulemap */,
+				181E84F27FE7D603FC8A484B077D4064 /* DDMathParser.xcconfig */,
+				ED1DA0E1DFBD0A202A3E65940461F9FF /* DDMathParser-dummy.m */,
+				593E391D8FC1D94F2EE02864552ED84F /* DDMathParser-Info.plist */,
+				1E37A605274DA347ED48800635773BB6 /* DDMathParser-prefix.pch */,
+				5EE782A861EDAF51340FB9C235322106 /* DDMathParser-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDMathParser";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				02C26749D4BAF038155B44B23AF6EC57 /* Pods */,
+				5737897DF70C7E8D443D63D3AFBCD990 /* Products */,
+				0A9FCA0F97F399EA5C361B5D2CB98E9C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28178AE680D6178CBE9A8524BAAAFB07 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CAE428F3F2E68C5CED7A455BCE5512 /* DDMathParser-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A23CF9504061D5247FD8063D1EBBFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B83E581AA2AA03CB8A8C87AF956F541 /* Pods-Calculator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5596A8805FF25F9BD25A4904131CF2C2 /* DDMathParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC8F9976794759C4191765A8CE56B04 /* Build configuration list for PBXNativeTarget "DDMathParser" */;
+			buildPhases = (
+				28178AE680D6178CBE9A8524BAAAFB07 /* Headers */,
+				75900D830F8E9DE84DFC8EE0A3FF63FC /* Sources */,
+				475B418790CCFD60DF6E6D9EE02893E6 /* Frameworks */,
+				2828FCBB61198C498443492D13EE8898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDMathParser;
+			productName = DDMathParser;
+			productReference = FD21B372CB61C8A0F211867B7965259D /* MathParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B87A97BC29860BF70E28DE086BCAB20D /* Pods-Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A843B762FC3BF4A30523A8414046AA1 /* Build configuration list for PBXNativeTarget "Pods-Calculator" */;
+			buildPhases = (
+				43A23CF9504061D5247FD8063D1EBBFC /* Headers */,
+				601475D3844EF053AE81E2D7DFF9039E /* Sources */,
+				02F0B3D05306606BD1208BDC111AB3D3 /* Frameworks */,
+				6F1CABAEBE1ADF99EE6A60F212747AC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C35E7DC96174645EF42C01A9BCCE161D /* PBXTargetDependency */,
+			);
+			name = "Pods-Calculator";
+			productName = "Pods-Calculator";
+			productReference = 2521CFDEBBB21C3131F4669F12F8CC13 /* Pods_Calculator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5737897DF70C7E8D443D63D3AFBCD990 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5596A8805FF25F9BD25A4904131CF2C2 /* DDMathParser */,
+				B87A97BC29860BF70E28DE086BCAB20D /* Pods-Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2828FCBB61198C498443492D13EE8898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F1CABAEBE1ADF99EE6A60F212747AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601475D3844EF053AE81E2D7DFF9039E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CCB1E324655D7FCE8166083B176624 /* Pods-Calculator-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75900D830F8E9DE84DFC8EE0A3FF63FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D797FAF5A528719877AAEE6DA39FD35C /* Character.swift in Sources */,
+				950EE5F9256257B95B26C334498CCE0B /* Configuration.swift in Sources */,
+				1E6174AA93273176DDCE2DD0A01384E2 /* DDMathParser-dummy.m in Sources */,
+				078E5792E71E4E4F60438EED503219F1 /* DecimalNumberExtractor.swift in Sources */,
+				4082100C570F194A2357ABDD8A90CBC8 /* Deprecations.swift in Sources */,
+				3AE874E01E16C96D3591D9A4CCDBD07B /* Double.swift in Sources */,
+				C2C6DFB06EAFCCF156EE118CF2C0A794 /* DynamicResolution.swift in Sources */,
+				D9FCD45F74510B34A8BB4DD099435DE8 /* Either.swift in Sources */,
+				3532F97AFE38AA6F405E03C87035EDAF /* Evaluator.swift in Sources */,
+				19FCCF3C3F485E62491EA61FEBE72C0B /* ExponentExtractor.swift in Sources */,
+				F0C9A1EEE0C13A2BF7ED85DDA411DCD7 /* Expression+Matching.swift in Sources */,
+				3A8C95C8DCE074DC7B3BA7D3720DA517 /* Expression.swift in Sources */,
+				A66C5D6153F244B2BA8A64362AE7C8F7 /* Expressionizer.swift in Sources */,
+				8B6EAEC2C73522E04FD218B56F9D2063 /* ExpressionRewriter.swift in Sources */,
+				3155897A452ECDE01C98E31340FCE162 /* FractionNumberExtractor.swift in Sources */,
+				8F57050E57FD2C251475A7E0824FB05E /* Function.swift in Sources */,
+				36B814BE9FEE4F61B7FF8431CEEBC274 /* Functions+Defaults.swift in Sources */,
+				5DD03404429B6D042692A9AB147E3BCA /* FunctionSet.swift in Sources */,
+				250B84C939E21FC0DEA2FBFAFB25B47F /* GroupedToken.swift in Sources */,
+				58883AA0DC9ADEAFEEA6C930FB2E8964 /* HexNumberExtractor.swift in Sources */,
+				D62F0B492F655D15BE0B75D6DF656582 /* IdentifierExtractor.swift in Sources */,
+				4ECF85C5DCEDEFEE3B2E27AF925A39E2 /* LocalizedNumberExtractor.swift in Sources */,
+				9004AD89DBD6F9FF8F93497369F6A9A9 /* MathParserErrors.swift in Sources */,
+				188064D85B622F2D07FB5A6BD9F466F2 /* OctalNumberExtractor.swift in Sources */,
+				9EA79808F8593250DB616388436F16AD /* Operator+Defaults.swift in Sources */,
+				137BBB3EA2D521A579A8135703D0990B /* Operator.swift in Sources */,
+				7BC6BCC88DC5835A0614F6BB41E13FDB /* OperatorExtractor.swift in Sources */,
+				2FBF86293F6658740AFBD5A42D5D16E1 /* OperatorSet.swift in Sources */,
+				BCB12E82471B66DB648BCED8217B979E /* OperatorTokenSet.swift in Sources */,
+				5215022F15C48140677033FD5716D9B1 /* PeekingIterator.swift in Sources */,
+				E9DCF1B22B2C9C7F72EB017B8F093AF1 /* QuotedVariableExtractor.swift in Sources */,
+				B7D1EC92C950C316A861409B531EC6AF /* RawToken.swift in Sources */,
+				33FA1F7C85C9EB1B77C2CE7825CFEB66 /* ResolvedToken.swift in Sources */,
+				604D7DDCF143BDC866CF2BBC59FE3C9E /* RewriteRule+Defaults.swift in Sources */,
+				FB73A99171E6BFEE917CA245FD327834 /* RewriteRule.swift in Sources */,
+				86043369CE7FCF2A3B7F20CA1B213536 /* String.swift in Sources */,
+				6342B3574C2C6065ADF014CC60F9A5B8 /* SubstitutionExtensions.swift in Sources */,
+				8A12B24CC7CA348F76A1B6F95F5AD837 /* TokenCharacterBuffer.swift in Sources */,
+				E97E3867C89713F372510EB7EE6A6EDE /* TokenExtractor.swift in Sources */,
+				20850AF3723850FE77F1481823EDA3FC /* TokenGrouper.swift in Sources */,
+				3B859E9B772FF1BE429A91D0644BC101 /* Tokenizer.swift in Sources */,
+				CD86BB1295012AD09D1E9259ECABCD51 /* TokenResolver.swift in Sources */,
+				3520964D4798BAEE3CA199138096C19F /* VariableExtractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C35E7DC96174645EF42C01A9BCCE161D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DDMathParser;
+			target = 5596A8805FF25F9BD25A4904131CF2C2 /* DDMathParser */;
+			targetProxy = EF6600DFFC3759FDA610749EDEDF29AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		510B057D2E9F059C50D52DA5D90F3ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		804E13245C9FBBE6A340C555CA8B2B4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8F75BB3DBA40383209D8AD7DAF54E2C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F863CFDCE6B2A23D274BA47C4B1D96AA /* Pods-Calculator.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calculator/Pods-Calculator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calculator/Pods-Calculator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B342627628B6B8FD068AAF7249DA00A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181E84F27FE7D603FC8A484B077D4064 /* DDMathParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DDMathParser/DDMathParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDMathParser/DDMathParser-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDMathParser/DDMathParser.modulemap";
+				PRODUCT_MODULE_NAME = MathParser;
+				PRODUCT_NAME = MathParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9C9804A4C81359AAA83338A97244A87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 078E62CEE0ED21A89921430B16D479C3 /* Pods-Calculator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Calculator/Pods-Calculator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Calculator/Pods-Calculator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1BAD30FFD94CB26132CA8CE2FABE74C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181E84F27FE7D603FC8A484B077D4064 /* DDMathParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DDMathParser/DDMathParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDMathParser/DDMathParser-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DDMathParser/DDMathParser.modulemap";
+				PRODUCT_MODULE_NAME = MathParser;
+				PRODUCT_NAME = MathParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				804E13245C9FBBE6A340C555CA8B2B4C /* Debug */,
+				510B057D2E9F059C50D52DA5D90F3ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A843B762FC3BF4A30523A8414046AA1 /* Build configuration list for PBXNativeTarget "Pods-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F75BB3DBA40383209D8AD7DAF54E2C5 /* Debug */,
+				E9C9804A4C81359AAA83338A97244A87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC8F9976794759C4191765A8CE56B04 /* Build configuration list for PBXNativeTarget "DDMathParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B342627628B6B8FD068AAF7249DA00A8 /* Debug */,
+				F1BAD30FFD94CB26132CA8CE2FABE74C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
