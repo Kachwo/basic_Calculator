@@ -24,6 +24,6 @@ It is a basic calculator app for iOS which provides basic arithmetic functions. 
 ![Image of classic layout](Layout_Img/ios_theme.png)
 
 
-## Tested device
+## Tested Devices
 
 Layout is tested and displayed normally on iPhone 8, iPhone 8 Plus, iPhone 11 and iPhone 11 Pro Max.
